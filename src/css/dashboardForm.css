@@ -54,6 +54,11 @@
   border-radius: 5px;
   color: #fff;
 }
+.file-flex.div-error {
+  background-color: #c44;
+  border: 2px solid #f80;
+  opacity: 1;
+}
 
 .icons-container span {
   margin: 8px;

@@ -34,6 +34,7 @@ export default class {
       .list()
       .then(snapshot => {
         const bills = snapshot
+          .filter(doc => doc.fileName !== "null")
           .map(doc => {
             try {
               return {
@@ -52,6 +53,9 @@ export default class {
               }
             }
           })
+
+          bills.forEach(doc => console.log(doc))
+          
           console.log('length', bills.length)
         return bills
       })

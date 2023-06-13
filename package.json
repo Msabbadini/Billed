@@ -1,7 +1,9 @@
 {
   "scripts": {
     "test": "jest --coverage --noStackTrace --silent",
-    "test-login": "jest Login.js"
+    "test-login": "jest Login.js",
+    "test-bills": "jest Bills.js",
+    "test-coverage-bills": "jest --coverage Bill.js"
   },
   "jest": {
     "verbose": false,
